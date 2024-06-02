@@ -1,0 +1,133 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 7rem;
+  margin-left: 30px;
+  color: white;
+  -webkit-text-stroke: 1px white;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  z-index: 100;
+}
+
+.close-icon {
+  font-size: 70px;
+  margin-left: 10px;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+}
+
+.line-1 {
+  margin-left: 10px;
+  height: 2px;
+  width: 35px;
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: flex-start; /* Align items to the start for smaller screens */
+    padding-top: 2rem; /* Add padding to the top */
+  }
+
+  .navbar a {
+    margin-top: 15px;
+    font-size: 3rem; /* Reduce font size for smaller screens */
+    margin-left: 20px; /* Adjust margin for smaller screens */
+  }
+  
+}
+/* Home.css */
+
+.home-title{
+  position: absolute;
+  font-size: 7rem;
+  top: 9rem;
+  left: 1.25rem;
+  line-height: 1;
+}
+/* Hide canvas on screens with width 1024px and below */
+@media screen and (max-width: 1024px) {
+  .car{
+    height: 50vh;
+    width: 100vh;
+    position: relative;
+    top: 200px;
+    left: -160px;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Adjust h1 size for tablet view */
+@media screen and (max-width: 1024px) {
+  .home-title {
+    width: 100vw;
+    font-size: 6rem;
+  }
+}
+
+/* Adjust h1 size for mobile view */
+@media screen and (max-width: 768px) {
+  .home-title {
+    font-size: 5rem;
+    top: 50px;
+    left: 5px;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+  .home-title {
+    font-size: 5rem;
+    top: 50px;
+    left: 5px;
+  }
+  .canvas-hidden {
+    display: none;
+  }
+}
+@media screen and (max-width: 431px) {
+  .car{
+    height: 50vh;
+    width: 100vh;
+    position: relative;
+    top: 200px;
+    left: -260px;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+  }
+}
